@@ -115,11 +115,12 @@ tnoremap <C-l> <C-w>l
 noremap <expr> k ((line('.')==1)?'':'k')
 noremap <expr> j ((line('.')==line('$'))?'':'j')
 "" term
-noremap <leader>tt :term<CR>
+noremap <leader>tt :term ++curwin<CR>
 "" buffer
 noremap <S-l> :bn<CR>
 tnoremap <S-l> :bn<CR>
 noremap <S-h> :bp<CR>
 tnoremap <S-h> :bp<CR>
+noremap <leader>x :bd<CR>
 "" save
 noremap <C-s> :w<CR>
