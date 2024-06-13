@@ -32,13 +32,12 @@ set ruler
 set encoding=utf-8
 
 " Whitespace
-set wrap
-set textwidth=79
-set formatoptions=tcqrn1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+set nowrap           " do not automatically wrap on load
+set formatoptions-=t " do not automatically wrap text when typing
+" set tabstop=2
+" set shiftwidth=2
+" set softtabstop=2
+" set expandtab
 set noshiftround
 
 " Cursor motion
@@ -118,9 +117,7 @@ noremap <expr> j ((line('.')==line('$'))?'':'j')
 noremap <leader>tt :term ++curwin<CR>
 "" buffer
 noremap <S-l> :bn<CR>
-tnoremap <S-l> :bn<CR>
 noremap <S-h> :bp<CR>
-tnoremap <S-h> :bp<CR>
 noremap <leader>x :bd<CR>
 "" save
 noremap <C-s> :w<CR>
