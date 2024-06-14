@@ -100,6 +100,7 @@ colorscheme nord
 
 " Mapping
 map <leader>e :Ex<CR> " Open local-directory browser
+noremap - :Ex<CR> " Open local-directory browser
 tnoremap <C-x> <C-\><C-n> " test
 "" siwtch window
 map <C-j> <C-w>j
