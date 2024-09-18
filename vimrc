@@ -12,7 +12,6 @@ syntax on
 " For plugins to load correctly
 filetype plugin indent on
 
-" TODO: Pick a leader key
 let mapleader = " "
 
 " Security
@@ -27,6 +26,7 @@ set ruler
 
 " Blink cursor on error instead of beeping (grr)
 " set visualbell
+set cursorline
 
 " Encoding
 set encoding=utf-8
